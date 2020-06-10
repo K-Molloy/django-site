@@ -1,0 +1,99 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    /* remove the extra whites around */
+    margin: 0;
+  }
+canvas {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+  }
+  
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #afc4c4
+  }
+  
+  
+.text {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%,-50%);
+      color: #ffffff;
+      max-width: 90%;
+      padding: 2em 3em;
+      background: rgba(0, 0, 0, 0.4);
+      text-shadow: 0px 0px 2px #131415;
+      font-family: 'Open Sans', sans-serif;
+  }
+  
+h1 {
+      font-size: 2.25em;
+      font-weight: 700;
+      letter-spacing: -1px;
+  }
+  
+  /* Button Styles */
+  
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #ffffff;
+    margin: 20px 20px 20px 20px;
+    color: #afc4c4;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+a {
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  
+#button-3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+#button-3 a {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+#circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #afc4c4;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+  }
+  
+#button-3:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+  }
+  
+#button-3:hover a {
+    color: #afc4c4;
+  }

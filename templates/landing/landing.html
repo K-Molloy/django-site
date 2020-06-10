@@ -1,0 +1,41 @@
+{% extends 'core.html'%}
+{% load static %}
+
+<!-- Page Title -->
+<title>{% block title %}Kieran Molloy{% endblock %}</title>
+
+<!-- Additional Scripts/Styles -->
+{% block misc%}
+<link rel="stylesheet" href="{% static 'css/landing.css' %}">
+<script src="{% static 'script/particles.js' %}"></script> 
+{% endblock %}
+
+<!-- Content -->
+{% block body %}
+<body>
+    <!-- main-body -->
+        <div class="container">
+
+            <div id="particles-js">
+                <div class="text">
+                    <h1>Kieran Molloy</h1>
+                    <h3>Mathematics Graduate</h3>
+                    <p>Background: Network Rail Current Live Trains </p>
+                    <p>Current Project: CIF Parser</p>
+                    <div class="button" id="button-3">
+                      <div id="circle"></div>
+                      <a href="/home">Home</a>
+                    </div>
+                    <div class="button" id="button-3">
+                      <div id="circle"></div>
+                      <a href="/posts/categories">Explanation</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ParticlesJS Script-->
+            {% include 'landing/landing_js.html'%}
+        </div>
+    <!-- main-body -->
+</body>
+{% endblock %}
+

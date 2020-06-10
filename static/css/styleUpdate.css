@@ -270,3 +270,47 @@ a.navbar-brand {
 }
 
 /* responsive */
+
+
+/* Old Base.html CSS*/
+.social {
+    list-style: none;
+}
+.social li {
+    display: inline-block;
+    text-align: center;
+}
+.social .fab{
+    color: white;
+    width: 80px;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+.social .fas{
+    color: white;
+    width: 80px;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.social .fab:hover{
+    background-color: white;
+    color: #282C34;
+    transition: 0.3s;
+}
+
+.social .fas:hover{
+    background-color: white;
+    color: #282C34;
+    transition: 0.3s;
+}
+
+.linkedin { background-color: #0073B2; }
+.twitter { background-color: #1DA1F2; }
+.researchgate { background-color: #1DA1F2; }
+.github { background-color: #1DA1F2; }
+

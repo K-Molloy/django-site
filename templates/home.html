@@ -1,27 +1,10 @@
 {% extends 'base.html' %}
 
-<title>{% block title %}DevsCave{% endblock %}</title>
+<!-- Title-->
+<title>{% block title %}Kieran Molloy{% endblock %}</title>
 
+<!-- Content -->
 {% block content %}
-    <!-- header image -->
-    <div class="showcase bg-white">
-        <div class="showcase-content">
-
-            {% if request.user.is_authenticated %}
-            <h1 class="title text-center">Publish Your <a class="gradient text-white px-3" href="{% url 'create' %}" style="font-family: 'Baloo Bhaijaan'; border-radius: 10px; color:white">BLOG NOW!</a></h1>
-            {% else %}
-            <h1 class="title text-center">Publish Your <a class="gradient text-white px-3" href="{% url 'signup' %}" style="font-family: 'Baloo Bhaijaan'; border-radius: 10px; color:white">BLOG NOW!</a></h1>
-            {% endif %}
-
-            
-            <form class="search input-group mt-5" method="GET" action="{% url 'home' %}">
-                <input type="text" name='q' class="form-control" placeholder="What are you looking for?">
-                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-                <br>
-                {% include 'posts/messages_display.html' %}
-            </form>
-        </div>
-    </div>
 
     <!-- main-body -->
     <div class="main-content bg-white">
