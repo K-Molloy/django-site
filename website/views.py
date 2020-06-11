@@ -40,6 +40,7 @@ def home(request):
         'page_request_var': page_request_var,
         'page': page,
     }
+
     template = 'home.html'
     if request.method == "POST":
         username, password = request.POST['username'], request.POST['password']

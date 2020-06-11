@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .loginBox {
@@ -30,13 +30,13 @@ body {
     border: none;
     padding: 0.8rem;
     outline: none;
-    font-family: 'Quicksand';
+    font-family: 'Roboto';
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 label, input {
-    font-family: 'Quicksand';
+    font-family: 'Roboto';
     border-radius: 0;
     padding: 0.2rem 0;
 }
@@ -54,7 +54,7 @@ input {
 input::placeholder {
     text-transform: uppercase;
     font-size: 0.8rem;
-    font-family: 'Quicksand';
+    font-family: 'Roboto';
 }
   
 #signin-button {

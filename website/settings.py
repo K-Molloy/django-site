@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c=%k%9xs*67#$=bmc3n8i@$1!&xe%mrr6o%dd!xamqwr44%m6x'
+SECRET_KEY = 'this-is-a-really-good-security-key-smiley'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -149,15 +149,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = ' /var/www/html/static/'
-STATIC_URL = 'http://kieranmolloy.co.uk/static/'
+STATIC_ROOT = '/var/www/django/static/'
+STATIC_URL = 'http://kieranmolloy.co.uk/s/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-MEDIA_URL = 'http://kieranmolloy.co.uk/media/'
-MEDIA_ROOT = '/var/www/html/media/'
+MEDIA_ROOT = '/var/www/django/media/'
+MEDIA_URL = 'http://kieranmolloy.co.uk/m/'
+
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'

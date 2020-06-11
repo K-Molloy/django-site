@@ -5,14 +5,13 @@
 <title>{% block title %}Kieran Molloy{% endblock %}</title>
 
 <!-- Additional Scripts/Styles -->
-{% block misc%}
+{% block misc %}
 <link rel="stylesheet" href="{% static 'css/landing.css' %}">
 <script src="{% static 'script/particles.js' %}"></script> 
 {% endblock %}
 
 <!-- Content -->
 {% block body %}
-<body>
     <!-- main-body -->
         <div class="container">
 
@@ -36,6 +35,5 @@
             {% include 'landing/landing_js.html'%}
         </div>
     <!-- main-body -->
-</body>
 {% endblock %}
 
