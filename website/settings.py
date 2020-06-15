@@ -27,13 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'workstation844@gmail.com'
-EMAIL_HOST_PASSWORD = 'ug024015029'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-
-
 # EMAIL_HOST = 'smtp.sendgrid.net'
 # EMAIL_HOST ='smtp.gmail.com'
 # EMAIL_HOST_USER = ''
@@ -150,14 +143,14 @@ USE_TZ = True
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 STATIC_ROOT = '/var/www/django/static/'
-STATIC_URL = 'http://kieranmolloy.co.uk/s/'
+STATIC_URL = 'https://kieranmolloy.co.uk/s/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
 MEDIA_ROOT = '/var/www/django/media/'
-MEDIA_URL = 'http://kieranmolloy.co.uk/m/'
+MEDIA_URL = 'https://kieranmolloy.co.uk/m/'
 
 
 LOGIN_REDIRECT_URL = 'home'
